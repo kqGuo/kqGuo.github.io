@@ -5,19 +5,19 @@
   
 
   
-  <title>LintCode题目951.重排“ | Hexo</title>
+  <title>LintCode题目951.重排 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：‘package lintcode; import java.util.Arrays; public class test951 { public st">
+  <meta name="description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：package lintcode; import java.util.Arrays; public class test951 { public sta">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LintCode题目951.重排“">
-<meta property="og:url" content="http://yoursite.com/2018/05/23/LintCode题目951-重排“/index.html">
+<meta property="og:title" content="LintCode题目951.重排">
+<meta property="og:url" content="http://yoursite.com/2018/05/23/LintCode题目951-重排/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：‘package lintcode; import java.util.Arrays; public class test951 { public st">
+<meta property="og:description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：package lintcode; import java.util.Arrays; public class test951 { public sta">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-23T13:43:16.618Z">
+<meta property="og:updated_time" content="2018-05-23T13:51:25.358Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LintCode题目951.重排“">
-<meta name="twitter:description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：‘package lintcode; import java.util.Arrays; public class test951 { public st">
+<meta name="twitter:title" content="LintCode题目951.重排">
+<meta name="twitter:description" content="题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。样例：给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。下面是代码实例：package lintcode; import java.util.Arrays; public class test951 { public sta">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,9 +64,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-LintCode题目951-重排“" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-LintCode题目951-重排" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/05/23/LintCode题目951-重排“/" class="article-date">
+    <a href="/2018/05/23/LintCode题目951-重排/" class="article-date">
   <time datetime="2018-05-23T13:37:15.000Z" itemprop="datePublished">2018-05-23</time>
 </a>
     
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      LintCode题目951.重排“
+      LintCode题目951.重排
     </h1>
   
 
@@ -86,7 +86,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。<br>样例：<br>给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。<br>下面是代码实例：<br>‘package lintcode;</p>
+        <p>题目：给一列数组要求重排，必须所有偶数位上的数都小于所有奇数位上的数。同时，偶数位上的数也按照升序排序，奇数位上的也按照升序排序。<br>样例：<br>给出array = [-1,0,1,-1,5,10], 返回 [-1,1,-1,5,0,10]。<br>下面是代码实例：<br>package lintcode;</p>
 <p>import java.util.Arrays;</p>
 <p>public class test951 {</p>
 <pre><code>public static void main(String[] args) {
@@ -100,6 +100,7 @@
      */
     public static int[] rearrange(int[] nums) {
         // Write your code here 
+        //选择排序
         for(int i=0;i&lt;nums.length-1;i++){
             for(int j=i+1; j &lt; nums.length;j++){
                 if(nums[i]&gt;nums[j]){
@@ -132,18 +133,27 @@
         return nums;
     }
 }
-</code></pre><p>‘</p>
-
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/23/LintCode题目951-重排“/" data-id="cjhj5wq7q0000kousw7tju98l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/23/LintCode题目951-重排/" data-id="cjhj638l00001jkusdf65lyqc" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -176,7 +186,11 @@
       <ul>
         
           <li>
-            <a href="/2018/05/23/LintCode题目951-重排“/">LintCode题目951.重排“</a>
+            <a href="/2018/05/23/LintCode题目951-重排/">LintCode题目951.重排</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/23/hello-world/">Hello World</a>
           </li>
         
       </ul>
